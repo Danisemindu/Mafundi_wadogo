@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/scroll"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_upTitle_juu"
+                android:textSize="28sp"
+                android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+                android:textAlignment="center"/>
+
+            <EditText
+                android:id="@+id/fnameReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/fnameReg"
+                android:minHeight="48dp"
+                tools:ignore="TextContrastCheck,VisualLintTextFieldSize"
+                android:inputType="text"
+                android:autofillHints="no" />
+
+            <EditText
+                android:id="@+id/snameReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/snameReg"
+                android:minHeight="48dp"
+                tools:ignore="VisualLintTextFieldSize"
+                android:inputType="text"
+                android:autofillHints="no" />
+
+            <EditText
+                android:id="@+id/emailReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/emailReg"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp"
+                android:autofillHints="no"
+                tools:ignore="VisualLintTextFieldSize" />
+
+            <EditText
+                android:id="@+id/passwordReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/passwordReg"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:autofillHints="no"
+                tools:ignore="VisualLintTextFieldSize" />
+
+            <EditText
+                android:id="@+id/confirmpasswordReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="no"
+                android:hint="@string/confirm_passwordReg"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                tools:ignore="VisualLintTextFieldSize,TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/locationReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="no"
+                android:hint="@string/locationReg"
+                android:inputType="text"
+                android:minHeight="48dp"
+                tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+
+            <EditText
+                android:id="@+id/genderReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/genderReg"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:importantForAutofill="no"
+                tools:ignore="VisualLintTextFieldSize" />
+
+            <EditText
+                android:id="@+id/numberReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/phone_numberReg"
+                android:inputType="number"
+                android:minHeight="48dp"
+                tools:ignore="TextContrastCheck,VisualLintTextFieldSize"
+                android:importantForAutofill="no" />
+
+            <TextView
+                android:id="@+id/register_as"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/register_as"
+                android:textSize="18sp"
+                tools:ignore="TextSizeCheck" />
+
+            <RadioGroup
+                android:id="@+id/regRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/clientRadioBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/client_radio_Reg"/>
+
+                <RadioButton
+                    android:id="@+id/handymanRadioBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/handyman_radio_Reg"/>
+            </RadioGroup>
+
+            <Spinner
+                android:id="@+id/handyman_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/specificSkillsEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/specify_your_skills"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:visibility="gone"
+                android:importantForAutofill="no" />
+
+            <Button
+                android:id="@+id/signupReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_upReg"
+                tools:ignore="VisualLintButtonSize" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
