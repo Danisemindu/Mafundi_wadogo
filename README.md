@@ -1,2 +1,2 @@
 # Mafundi_wadogo
-Application to allocate handymen in Tanzania 
+Application to allocate handymen(mafundi wadogo) in Tanzania 
