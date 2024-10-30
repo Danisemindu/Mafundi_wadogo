@@ -7,7 +7,7 @@
 - Handyman Search: Find handymen based on your location and the specific service you need.
 - User-Friendly Interface: Simple and intuitive design to enhance user experience.
 - Profiles: View profiles of handymen, including ratings, reviews, and service history.
-- **Secure Communication: Contact handymen 
+- Communication: Contact handymen 
 
 ## Technologies Used
 
